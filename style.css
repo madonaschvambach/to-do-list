@@ -2,18 +2,20 @@ body {
     background-image: URL("./src/img/image-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover; /*resize the background image to cover the entire container */
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
 }
 
 .content {
     width: 95%;
+    height: 100%;
     margin: auto;
-    font-size: 14px;
+    font-size: 12px;
     font-family: Courier, monospace;
 }
 
-.content-left, .content-right{
+.content-left, 
+.content-right{
     margin-top: 3.07vh;
     height: 90vh;
 }
@@ -35,7 +37,7 @@ body {
 
 .profile-information {
     width: 90%;
-    margin: 3.07vh 0 0 3.07vh;
+    margin: 30px 0 0 30px;
     height: 58px;
 }
 
@@ -49,13 +51,12 @@ body {
 
 .profile-data {
     width: auto;
-    padding-top: 1.33vh;
+    padding-top: 13px;
 }
 
-.profile-name, .profile-email {
-    width: 80%;
-    height: 100%;
-    float: right;
+.profile-name,
+.profile-email {
+    padding-left: 5px;
     align-items: center;
     display: flex;
 }
@@ -65,38 +66,84 @@ body {
 }
 
 .search-information {
-    padding: 10px;
+    padding: 5px;
     background-color: Silver;
-    width: 16.41vh;
+    width: 130px;
     border-radius: 8px;
-    margin: 1.53vh 1.53vh 15px 3.07vh;
 }
 
 .search-icon {
-    width: 17px;
-    height: 17px;
+    width: 16px;
+    height: 16px;
     background-size: cover;
     float: left;
     background-image: url("./src/img/search-icon.png");
 }
 
 .search {
-    margin-left:  1.02vh;
+    padding-left:  10px;
+    background-color: transparent;
+    border: transparent;
+}
+
+.search:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.sun-icon {
+    background-image: url("./src/img/sun-icon.png");
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    float: left;
+}
+
+.my-day {
+    padding-top: 6px;
+    padding-left: 34px;
+}
+
+.star-icon {
+    background-image: url("./src/img/star-icon.png");
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    float: left;
+}
+
+.important {
+    padding-top: 4px;
+    padding-left: 34px;
+}
+
+.search,
+.my-day {
+    width: 70%;
     width: 70%;
 }
 
-/* Desktop */
-@media only screen and (max-device-width: 1024px) {
-    .content {
-        font-size: 12px;
-    }
+.search-information, 
+.my-day-information, 
+.important-information {
+    margin: 14px 14px 15px 30px;
+}
 
-    .profile-email {
-        font-size: 10px;
-    }
-
+/* Desktop 1024px*/
+@media only screen and (max-device-width: 1098px) {
     .profile-photo {
         width: 40px;
         height: 40px;
+    }
+}
+
+/* Desktop 2560pxpx*/
+@media only screen and (min-device-width: 2560px) {
+    .content {
+        font-size: 14px;
+    }
+
+    .profile-email {
+        font-size: 12px;
     }
 }
