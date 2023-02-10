@@ -30,35 +30,40 @@ body {
 .content-right {
     width: 70%;
     float: right;
-    background-image: url("./src/img/image-content-right.jpg");
-    background-size: cover;
     border-radius: 0px 15px 15px 0px;
+    background-size: cover;
+    background-image: url("./src/img/image-content-right.jpg");
 }
 
 .profile-information {
     width: 90%;
-    margin: 30px 0 0 30px;
     height: 58px;
+    margin: 30px 0 0 30px;
 }
 
 .profile-photo {
     width: 50px;
     height: 50px;
-    background-size: cover;
     float: left;
+    background-size: cover;
     background-image: url("./src/img/profile-photo.png");
 }
 
 .profile-data {
     width: auto;
-    padding-top: 13px;
 }
 
 .profile-name,
 .profile-email {
+    display: flex;
+    margin: 0;
     padding-left: 5px;
     align-items: center;
-    display: flex;
+}
+
+.profile-name {
+    padding-top: 13px;
+    font-size: 14px;
 }
 
 .profile-email {
@@ -67,66 +72,154 @@ body {
 
 .search-information {
     padding: 5px;
-    background-color: Silver;
     width: 130px;
     border-radius: 8px;
+    background-color: Silver;
 }
 
 .search-icon {
     width: 16px;
     height: 16px;
-    background-size: cover;
     float: left;
+    background-size: cover;
     background-image: url("./src/img/search-icon.png");
 }
 
 .search {
     padding-left:  10px;
-    background-color: transparent;
     border: transparent;
+    background-color: transparent;
 }
 
 .search:focus {
-    box-shadow: 0 0 0 0;
     outline: 0;
+    box-shadow: 0 0 0 0;
+}
+
+.my-day-information {
+    height: 27px;
 }
 
 .sun-icon {
-    background-image: url("./src/img/sun-icon.png");
-    width: 25px;
-    height: 25px;
-    background-size: cover;
+    width: 27px;
+    height: 27px;
     float: left;
+    background-size: cover;
+    background-image: url("./src/img/sun-icon.png");
 }
 
-.my-day {
-    padding-top: 6px;
-    padding-left: 34px;
+.important-information {
+    height: 20px;
 }
 
 .star-icon {
-    background-image: url("./src/img/star-icon.png");
     width: 20px;
     height: 20px;
-    background-size: cover;
     float: left;
+    background-size: cover;
+    background-image: url("./src/img/star-icon.png");
 }
 
-.important {
-    padding-top: 4px;
-    padding-left: 34px;
+.planned-information {
+    height: 19px;
+}
+
+.planeed-icon {
+    width: 19px;
+    height: 19px;
+    float: left;
+    background-size: cover;
+    background-image: url("./src/img/planned-icon.png");
+}
+
+.all-information {
+    height: 19px;
+}
+
+.all-icon {
+    width: 19px;
+    height: 19px;
+    float: left;
+    background-size: cover;
+    background-image: url("./src/img/all-icon.png");
+}
+
+.completed-information {
+    height: 19px;
+}
+
+.completed-icon {
+    width: 19px;
+    height: 19px;
+    float: left;
+    background-size: cover;
+    background-image: url("./src/img/completed-icon.png");
+}
+
+.assigned-information {
+    height: 21px;
+}
+
+.assigned-icon {
+    width: 21px;
+    height: 21px;
+    float: left;
+    background-size: cover;
+    background-image: url("./src/img/assigned-icon.png");
+}
+
+.task-information {
+    height: 21px;
+}
+
+.task-icon {
+    width: 21px;
+    height: 21px;
+    float: left;
+    background-size: cover;
+    background-image: url("./src/img/task-icon.png");
+}
+
+.new-list-information{
+    height: 20px;
+    float: inline-end;
+}
+
+.new-list-icon {
+    width: 20px;
+    height: 20px;
+    float: left;
+    background-size: cover;
+    background-image: url("./src/img/new-list-icon.png");
 }
 
 .search,
 .my-day {
     width: 70%;
-    width: 70%;
+}
+
+.my-day,
+.important,
+.planned,
+.all,
+.completed,
+.assigned,
+.task,
+.new-list {
+    margin: auto auto auto 8px;
 }
 
 .search-information, 
 .my-day-information, 
-.important-information {
+.important-information,
+.planned-information,
+.all-information,
+.completed-information,
+.assigned-information,
+.task-information,
+.new-list-information {
     margin: 14px 14px 15px 30px;
+    display: flex;
 }
 
 /* Desktop 1024px*/
