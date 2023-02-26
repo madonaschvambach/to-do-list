@@ -180,7 +180,7 @@ body {
     background-image: url("./src/img/task-icon.png");
 }
 
-.new-list-information{
+.new-list-information {
     height: 20px;
     float: inline-end;
 }
@@ -220,6 +220,67 @@ body {
 .new-list-information {
     margin: 14px 14px 15px 30px;
     display: flex;
+}
+
+.to-do {
+    padding: 10px;
+}
+
+.to-do-list-title {
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.to-do-list-new,
+.to-do-item {
+    padding: 12px;
+    display: flex;
+    width: 90%;
+    border-radius: 8px;
+    background-color: white;
+    margin: 5px;
+    align-items: center;
+    position: relative;
+}
+
+.to-do-list-new-input {
+    border: 0;
+    width: 100%;
+    padding: 0 5px 0 5px;
+}
+
+.to-do-list-new-input:focus {
+    box-shadow: 0;
+    outline: 0;
+}
+
+.to-do-item-description {
+    margin: 0px 10px 0px 10px;
+}
+
+.to-do-item-button {
+    right: 0;
+    position: absolute;
+    margin: 12px;
+}
+
+input[type="checkbox"]:checked + div.to-do-item-description {
+    text-decoration: line-through;
+}
+
+.to-do-item:hover {
+    background-color: #FAF0E6;
+}
+
+.more-icon {
+    width: 20px;
+    height: 20px;
+    float: left;
+    background-size: cover;
+    background-image: url("./src/img/more-icon.png");
 }
 
 /* Desktop 1024px*/
